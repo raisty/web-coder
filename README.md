@@ -35,12 +35,8 @@ Additionally, you may choose to set the following optional variables:
 
 ```yml
 show_downloads: ["true" or "false" to indicate whether to provide a download URL]
-show_wiki: ["true" or "false" to indicate whether to provide a Wiki]
 google_analytics: [Your Google Analytics tracking ID]
-cookies: ["true" or "false" to indicate whether to show cookie notification in footer]
 showcase_img: [Path, Url or "false" to show image on header]
-theme_color: ["#663FB5" color of meta theme-color tag]
-page-license: ["CC0" or "false" to show page license in footer]
 ```
 
 ### Stylesheet

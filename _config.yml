@@ -1,10 +1,6 @@
 title: Coder theme
 description: Coder responsive theme for GitHub Pages.
 show_downloads: true
-show_wiki: true
 google_analytics:
 theme: jekyll-theme-coder
-cookies: true
 showcase_img: "https://octodex.github.com/images/trekkie.png"
-theme_color: "#663FB5"
-page-license: CC0

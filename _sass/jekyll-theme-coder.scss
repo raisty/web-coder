@@ -59,6 +59,14 @@ a {
   &:hover {
     text-decoration: underline;
   }
+
+  &.colored {
+    color: $header-bg-color;
+  }
+
+  &.toplinks {
+    padding: 0 10px;
+  }
 }
 
 .btn {
@@ -113,7 +121,7 @@ a {
   color: $header-heading-color;
   text-align: center;
   background-color: $header-bg-color;
-  background: url(../images/#{$header-bg-image}), linear-gradient(to left, $header-bg-color, $header-bg-color-secondary);
+  background: url(../images/#{$header-bg-image}), linear-gradient(to right, $header-bg-color, $header-bg-color-secondary);
 
   @include large {
     padding: 5rem 6rem;
@@ -141,6 +149,26 @@ a {
 
     @include medium {
       padding: 4rem 0;
+    }
+  }
+
+  &.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    @include large {
+      padding: 1rem 0;
+    }
+
+    @include medium {
+      padding: 1rem 0;
+    }
+
+    h2 {
+      margin: 0;
     }
   }
 
@@ -177,6 +205,14 @@ nav {
     height: 10vh;
     background: linear-gradient(to bottom, $header-bg-color-secondary, transparent);
     border-top: 6px $header-bg-color-secondary solid;
+  }
+
+  &.links {
+    text-align: center;
+    padding: 10px;
+    background: lighten($header-bg-color-secondary, 65%);
+    border-top: 6px $header-bg-color-secondary solid;
+    border-bottom: 2px lighten($header-bg-color-secondary, 60%) solid;
   }
 }
 
