@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: short
 ---
 
 ## Welcome to another page
