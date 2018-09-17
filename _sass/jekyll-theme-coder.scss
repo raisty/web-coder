@@ -1,25 +1,8 @@
 @import "normalize";
 @import "rouge-github";
+@import "addons";
 @import "variables";
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
-
-@mixin large {
-  @media screen and (min-width: #{$large-breakpoint}) {
-    @content;
-  }
-}
-
-@mixin medium {
-  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
-    @content;
-  }
-}
-
-@mixin small {
-  @media screen and (max-width: #{$medium-breakpoint}) {
-    @content;
-  }
-}
 
 * {
   box-sizing: border-box;
@@ -446,8 +429,8 @@ nav {
   }
 
   img.gravatar {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
   }
 
   .license {
@@ -474,4 +457,32 @@ nav {
 .site-footer-cookies {
   display: block;
   font-size: 0.8rem;
+}
+
+.tag {
+  color: #000;
+  background-color: #b5b5b5;
+  padding: 0.2rem 0.3rem;
+  font-size: 0.9rem;
+  font-family: monospace;
+  @include border-radius(0.3rem);
+}
+
+a.badge {
+  color: #fff;
+  background-color: #000;
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  font-family: monospace;
+  text-decoration: none;
+  @include border-radius(0.3rem);
+  :first-child {
+    background-color: #555;
+    padding: 0.2rem 0.3rem;
+    @include border-radiusx(0.3rem, null, null, 0.3rem);
+  }
+  :nth-child(2) {
+    padding: 0.2rem 0.3rem;
+    @include border-radiusx(null, 0.3rem, 0.3rem, null);
+  }
 }

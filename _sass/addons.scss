@@ -1,0 +1,50 @@
+@mixin large {
+  @media screen and (min-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (max-width: #{$medium-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin border-radiusx($topleft: null, $topright: null, $bottomright: null, $bottomleft: null) {
+  @if $topleft != null and $topleft >= 0 {
+    border-top-left-radius: $topleft;;
+    -webkit-border-top-left-radius: $topleft;
+    -moz-border-radius-topleft: $topleft;
+  }
+
+  @if $topright != null and $topright >= 0 {
+    border-top-right-radius: $topright;
+    -webkit-border-top-right-radius: $topright;
+    -moz-border-radius-topright: $topright;
+  }
+
+  @if $bottomleft != null and $bottomleft >= 0 {
+    border-bottom-left-radius: $bottomleft;
+    -webkit-border-bottom-left-radius: $bottomleft;
+    -moz-border-radius-bottomleft: $bottomleft;
+  }
+
+  @if $bottomright != null and $bottomright >= 0 {
+    border-bottom-right-radius: $bottomright;
+    -webkit-border-bottom-right-radius: $bottomright;
+    -moz-border-radius-bottomright: $bottomright;
+  }
+}

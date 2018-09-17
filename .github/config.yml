@@ -9,10 +9,6 @@ updateDocsComment: "Thanks for the pull request! If you are making any changes t
 requestInfoReplyComment: Thanks for this. Do you mind providing a bit more information about what problem you're trying to solve?
 requestInfoLabelToAdd: more-information-needed
 
-# Configuration for new-issue-welcome - https://github.com/behaviorbot/new-issue-welcome
-#newIssueWelcomeComment: >
-#  Welcome!
-
 # Configuration for new-pr-welcome - https://github.com/behaviorbot/new-pr-welcome
 newPRWelcomeComment: Welcome! Congrats on your first pull request to The Coder Theme.
 

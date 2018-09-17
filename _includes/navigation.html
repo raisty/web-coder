@@ -1,0 +1,8 @@
+<nav class="links">
+  {% assign pages = site.data.navigation %}
+  {% for page in pages %}
+    {%- if page.title -%}
+    <a class="toplinks colored" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
+    {%- endif -%}
+  {% endfor %}
+</nav>
