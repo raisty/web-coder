@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name          = 'jekyll-theme-coder'
+  s.name          = 'web-theme-coder'
   s.version       = '0.1.1'
   s.license       = 'CC0-1.0'
   s.authors       = ['Jason Long', 'GitHub, Inc.', 'Raisty']
